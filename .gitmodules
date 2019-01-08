@@ -1,0 +1,10 @@
+[submodule "riscv-vip"]
+	path = riscv-vip
+	url = git@github.com:jerralph/riscv-vip.git
+[submodule "scr1"]
+	path = scr1
+	url = git@github.com:jerralph/scr1.git
+	branch = riscv-vip-demo
+[submodule "riscv-compliance"]
+	path = riscv-compliance
+	url = git@github.com:riscv/riscv-compliance.git
