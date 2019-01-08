@@ -18,11 +18,19 @@ riscv-compliance | https://github.com/riscv/riscv-compliance | RISC-V Foundation
 
 ## Prerequisites
 
+### Linux
+This assumes you are running on linux
+
 ### Mentor Questa Simulator
 This demo assumes you have the Questa/Modelsim simulator installed.  Other simulators may work but will require updates to the SCR1 Makefiles. 
 
 ### Clone the repository and submodules
-TODO
+Clone the riscv-vip-scr1-demo repo and initialize the submodules.  This assumes SSH and the clone path can be adjusted for https if you prefer. 
+```
+git clone git@github.com:jerralph/riscv-vip-scr1-demo.git
+cd riscv-vip-scr1-demo
+git submodule update --init
+```
 
 ### Setup the environment variables needed by the Make process
 In the root of the riscv-vip-scr1-demo repo, source the setup script:
