@@ -24,9 +24,11 @@ This demo assumes you have the Questa/Modelsim simulator installed.  Other simul
 ### Clone the repository and submodules
 TODO
 
-
 ### Setup the environment variables needed by the Make process
-`. setup.sh`
+In the root of the riscv-vip-scr1-demo repo, source the setup script:
+```
+. setup.sh
+```
 
 ### RISC-V GCC toolchain
 The RISC-V GCC toolchain is required, as documented in the SCR1 project.  [See the SCR1 project documentation](https://github.com/jerralph/scr1/tree/riscv-vip-demo#prerequisites) for specific details.  The bin directory will need to be on the PATH so the compiler can be executed durring the SCR1 make process.
@@ -35,7 +37,9 @@ The RISC-V GCC toolchain is required, as documented in the SCR1 project.  [See t
 For whatever reason, the make process for the SCR1 has some issues for me and repeately requires me to try and run the simulation and clean targets a few times until things are in order.  Once things are in order it works as expected.
 
 From the root of the riscv-vip-scr1-demo repo cd to the scr1 directory and run the simulation:
-`cd scr1`
+```
+cd scr1
+```
 
 Do iterations of the following until it runs properly (need to figure out and fix in scr1 scripting at some point so clean iterations aren't required)
 ```
@@ -75,4 +79,12 @@ When it eventually runs correctly, you should see an output that looks as follow
 
 Open the scr1/build/riscv_tracker_0.log file and you should see the instructions executed and the related register values listed in the trace. 
 
+## View the functional coverage report
 
+FUTURE
+
+# Future enhancments
+ * figure out and fix weird make issues that require clean sim interations
+ * update things for seeing the coverage report
+ * point out the details of integration and how that was done
+ 
