@@ -98,10 +98,10 @@ The Questa GUI will open.  Next ensure the covergroups view is checked via View 
 Explore the coverage report
 
 The following image shows ...
-![riscv-vip covergroups](docs/img/scr1-cov0.png)
+![riscv-vip covergroups](doc/img/scr1-cov0.png)
 
 This image shows ...
-![riscv-vip read-after-write covergroups](docs/img/scr1-cov-raw.png)
+![riscv-vip read-after-write covergroups](doc/img/scr1-cov-raw.png)
 
 
 # Future enhancments
