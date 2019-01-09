@@ -89,7 +89,20 @@ Open the scr1/build/riscv_tracker_0.log file and you should see the instructions
 
 ## View the functional coverage report
 
-FUTURE
+After running the simulation open udbc file generated into the build director
+```
+vsim -viewcov coverage.ucdb
+```
+
+The Questa GUI will open.  Next ensure the covergroups view is checked via View > Coverage > Covergroups.
+Explore the coverage report
+
+The following image shows ...
+![riscv-vip covergroups](docs/img/scr1-cov0.png)
+
+This image shows ...
+![riscv-vip read-after-write covergroups](docs/img/scr1-cov-raw.png)
+
 
 # Future enhancments
  * figure out and fix weird make issues that require clean sim interations
