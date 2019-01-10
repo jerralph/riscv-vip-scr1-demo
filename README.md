@@ -110,7 +110,7 @@ See the modifications that were made to the SCR1 using one of the two following 
  ```
  git diff master
  ```
- * look at the diff in github using this link: https://github.com/syntacore/scr1/compare/master...jerralph:riscv-vip-demo
+ * look at the diff in github using this link: https://github.com/jerralph/scr1/compare/master...jerralph:riscv-vip-demo
 
 # Future enhancments
  * figure out and fix weird make issues that require clean sim interations
