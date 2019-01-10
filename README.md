@@ -104,9 +104,15 @@ More details of the individual bins can be viewed by expanding into the details.
 
 ![riscv-vip read-after-write covergroups](doc/img/scr1-cov-raw.png)
 
+# Integration details
+See the modifications that were made to the SCR1 using one of the two following techniques:
+ 1. in the Linux console in the riscv-vip-scr1-demo/scr1 directory, run the following
+ '''
+ git diff master
+ '''
+ 1. look at the diff in github using this link: https://github.com/syntacore/scr1/compare/master...jerralph:riscv-vip-demo
 
 # Future enhancments
  * figure out and fix weird make issues that require clean sim interations
- * update things for seeing the coverage report
  * point out the details of integration and how that was done
  
