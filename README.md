@@ -97,10 +97,11 @@ vsim -viewcov coverage.ucdb
 The Questa GUI will open.  Next ensure the covergroups view is checked via View > Coverage > Covergroups.
 Explore the coverage report
 
-The following image shows ...
+The following image shows some of the different covergroups.
 ![riscv-vip covergroups](doc/img/scr1-cov0.png)
 
-This image shows ...
+More details of the individual bins can be viewed by expanding into the details.  For example, the image below shows the cros overage for read of a register after a write by a previous instuction -- a RAW data hazard.  The cross includes the instruction enumeration, the source register read case (RS1, RS2, or both RS1 and RS2), and the number of cycles between the writing instruction and the reading instruciton. More infromation on this specific cross is avilabile in the riscv-vip users' guide, under the [RAW Hazard coverage example heading](https://jerralph.github.io/riscv-vip/doc/index.html#h.j1blccquh4o5). The highlighted bin in the image, has not been hit by the testing and is for the case where a BGE instruction has an RS1 field that was written by the previous instruction.  Alternatively, the comparable bin for the BNE instruction is one row above and has been hit 51 times. 
+
 ![riscv-vip read-after-write covergroups](doc/img/scr1-cov-raw.png)
 
 
